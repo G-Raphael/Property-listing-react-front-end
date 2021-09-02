@@ -82,7 +82,13 @@ function Signup({ showSignUp, clickeventIn, showConfirmation }) {
             }
         else {
             //function that submits the form data should be inserted here and a response should be requested before showConfirmation
-              const response= await axios.post(url, {
+            const headers = {
+                'Content-Type': 'application/json'
+        
+              }     
+        const response= await axios.post(url,
+            {headers: headers},
+        {
         firstName,
         lastName,
         phone,
