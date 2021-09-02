@@ -10,9 +10,6 @@ box-sizing: border-box;
     padding:7.5rem 3% 7.5rem 3% !important;
     margin: 0px !important;
     width: 100% !important;
-
-    padding:7.5rem 0 7.5rem 7.5rem;
-    
     width: 100%;
     height: 31.25rem;
     background-color: #089BC9;
@@ -20,7 +17,7 @@ box-sizing: border-box;
 .footer-details{
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 .footer-details .footer-title{
     font-size: 1.5rem;
@@ -57,14 +54,14 @@ box-sizing: border-box;
    
 }
 
-/* #social{
+#social{
     margin-left: 2% !important;
     margin-right: 3% !important;
-} */
-
-#social{
-    margin-left: 12.31rem;
 }
+
+/* #social{
+    margin-left: 12.31rem;
+} */
 
 .red-icons{
     color:#E11B1B;
@@ -75,11 +72,11 @@ box-sizing: border-box;
     margin-right: 4%;
     margin-left: 0%;
 }
-.footer-details >div  p{
+/* .footer-details >div  p{
     margin-right: 4.81rem;
     margin-left: 1.25rem;
 
-}
+} */
 .footer-details img{
    width:11.25rem;
    height: 3.5rem;
@@ -115,67 +112,32 @@ box-sizing: border-box;
     font-weight: 300;
 }
 @media screen and (max-width:768px) {
+    .footer{
+        display: block;
+        height:initial;
+    }
     .footer-details{
       display: flex;
       flex-direction: column;
-      margin: 0;
     }
-    .footer{
-        padding: 2rem;
-        width: 100%;
-        height: auto;
-        overflow-x: hidden;
-    }
-    .footer-details img{
-      width:4rem;
-   height: 1.7rem;
-   display: block;
-   margin-top: 1.13rem;  
-    }
-    .footer-details .footer-title{
-    font-size: 1rem;
-    font-weight: 500;
-    line-height: 1.25rem;
-    color: #fff;
-    margin-right: 0.5rem;
-    white-space: nowrap;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-.footer-details p{
-     font-size: 0.8rem;
-    font-weight: 500;
-    line-height: 1.69rem; 
-    text-align: center;
-    margin-right: 0.5rem;
-}
+    .item1,.item2,.item3,.item4,.item5{
+ display: flex;
+ flex-direction: column;
+ padding-left: 6% !important;
+ margin-bottom: 10% !important;
 
-
-.footer-details >div{
-    display: flex;
-    align-items: center;
-}
-.social-icon{
-    width: 2.5rem;
-    height: 2.5rem;
-    background-color: #fff;
-    border-radius: 0.5rem;
-    color:#089BC9;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border:none;
-    font-size:1.5rem;
-    margin-bottom: 1rem;
-    margin-right: 0.5rem;
+    }
+    .footer-details .last{
+        margin-left: 0rem;
     
-   
-}
-.red-icons{
-    color:#E11B1B;
-}
-#social{
-    margin-left: 0;
-}
+    }
+    #call{
+        margin-top: 0rem;
+    }
+    #social{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
 
 }
